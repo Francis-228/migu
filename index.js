@@ -1,21 +1,23 @@
 const fetch = require('node-fetch');
 const config = require('./config.json');
 
-exports.handler = async (event) => {
-  const cid = event.queryStringParameters.cid || '';
-  const { userId, userToken, clientId } = config;
+async function handler(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Content-Type', 'application/json');
 
-  const apiUrl = `https://webapi.miguvideo.com/gateway/live/play/v1/playurl?contetId=${cid}&userId=${userId}&userToken=${userToken}&clientId=${clientId}`;
-  
-  const res = await fetch(apiUrl);
-  const data = await res.text();
+  const cid = req.url.split('cid=')[1] || '';
+  if(!cid) return res.end('缺少频道CID');
 
-  return {
-    statusCode: 200,
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-      "Access-Control-Allow-Origin": "*"
-    },
-    body: data
-  };
-};
+  const {userId, userToken, clientId} = config;
+  const api = `https://webapi.miguvideo.com/gateway/live/play/v1?contetId=${cid}&userId=${userId}&userToken=${userToken}&clientId=${clientId}`;
+
+  try {
+    const r = await fetch(api);
+    const text = await r.text();
+    res.end(text);
+  } catch(e) {
+    res.end('解析失败');
+  }
+}
+
+module.exports = handler;
