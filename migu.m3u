@@ -1,0 +1,11 @@
+#EXTM3U
+#EXTINF:-1,CCTV1综合
+https://你的用户名.github.io/api?cid=1001
+#EXTINF:-1,CCTV5体育
+https://你的用户名.github.io/api?cid=1005
+#EXTINF:-1,湖南卫视
+https://你的用户名.github.io/api?cid=2015
+#EXTINF:-1,浙江卫视
+https://你的用户名.github.io/api?cid=2022
+#EXTINF:-1,江苏卫视
+https://你的用户名.github.io/api?cid=2021
