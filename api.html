@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>咪咕线路接口</title>
+</head>
+<body>
+<script>
+// 跨域代理
+const proxy = "https://cors.jerryzou.workers.dev";
+// 常用频道ID（可自行扩展）
+const channels = [
+    {name:"CCTV-1",id:"1001"},
+    {name:"CCTV-5",id:"1005"},
+    {name:"湖南卫视",id:"1121"},
+    {name:"浙江卫视",id:"1131"}
+];
+
+// 解析URL参数，支持直接用token访问线路
+const urlParams = new URLSearchParams(window.location.search);
+const token = urlParams.get("token");
+const action = urlParams.get("action");
+
+// 如果是登录请求
+if(action === "login"){
+    const phone = urlParams.get("phone");
+    const code = urlParams.get("code");
+    loginAndReturn(phone, code);
+}
+// 如果有token，直接生成M3U线路
+else if(token){
+    generateM3U(token);
+}
+// 默认显示登录页
+else{
+    showLoginPage();
+}
+
+async function loginAndReturn(phone, code){
+    const res = await fetch(`${proxy}/https://passport.miguvideo.com/login/sms`,{
+        method:"POST",
+        headers:{"Content-Type":"application/x-www-form-urlencoded"},
+        body:`mobile=${phone}&smsCode=${code}`
+    });
+    const data = await res.json();
+    if(data.code === 200){
+        // 登录成功，跳转到带token的M3U地址
+        window.location.href = window.location.origin + window.location.pathname + "?token=" + data.data.token;
+    }else{
+        document.body.innerHTML = `<h1>登录失败：${data.msg}</h1>`;
+    }
+}
+
+async function generateM3U(token){
+    let m3u = `#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:0
+`;
+    for(const ch of channels){
+        const playRes = await fetch(`${proxy}/https://live.miguvideo.com/api/play?cid=${ch.id}&token=${token}`);
+        const playData = await playRes.json();
+        if(playData.url){
+            m3u += `#EXTINF:-1,${ch.name}\n${playData.url}\n`;
+        }
+    }
+    // 输出纯文本M3U内容，影视仓可直接读取
+    document.body.innerHTML = `<pre style="white-space:pre-wrap;">${m3u}</pre>`;
+    document.body.style.fontFamily = "monospace";
+}
+
+function showLoginPage(){
+    document.body.innerHTML = `
+    <h2>咪咕直播线路生成</h2>
+    <p>1. 输入手机号和验证码登录</p>
+    <p>2. 登录成功后自动生成可导入的M3U线路</p>
+    <form onsubmit="event.preventDefault(); login()">
+        <input type="text" id="phone" placeholder="手机号" maxlength="11" required><br>
+        <input type="text" id="code" placeholder="验证码" maxlength="6" required><br>
+        <button type="button" onclick="sendCode()">获取验证码</button>
+        <button type="submit">登录并生成线路</button>
+    </form>
+    <script>
+    async function sendCode(){
+        const phone = document.getElementById('phone').value;
+        await fetch("${proxy}/https://passport.miguvideo.com/sms/send",{
+            method:"POST",
+            headers:{"Content-Type":"application/x-www-form-urlencoded"},
+            body:\`mobile=\${phone}&type=login\`
+        });
+        alert("验证码已发送");
+    }
+    async function login(){
+        const phone = document.getElementById('phone').value;
+        const code = document.getElementById('code').value;
+        window.location.href = window.location.href + "?action=login&phone=" + phone + "&code=" + code;
+    }
+    <\/script>
+    `;
+}
+</script>
+</body>
+</html>
