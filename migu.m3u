@@ -1,134 +1,78 @@
 #EXTM3U
-# 央视全套
 #EXTINF:-1,CCTV-1 综合
-https://francis-228.github.io/migu/parse?cid=1001
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1001_HD.m3u8
 #EXTINF:-1,CCTV-2 财经
-https://francis-228.github.io/migu/parse?cid=1002
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1002_HD.m3u8
 #EXTINF:-1,CCTV-3 综艺
-https://francis-228.github.io/migu/parse?cid=1003
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1003_HD.m3u8
 #EXTINF:-1,CCTV-4 中文国际
-https://francis-228.github.io/migu/parse?cid=1004
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1004_HD.m3u8
 #EXTINF:-1,CCTV-5 体育
-https://francis-228.github.io/migu/parse?cid=1005
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1005_HD.m3u8
 #EXTINF:-1,CCTV-5+ 体育赛事
-https://francis-228.github.io/migu/parse?cid=10051
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/10051_HD.m3u8
 #EXTINF:-1,CCTV-6 电影
-https://francis-228.github.io/migu/parse?cid=1006
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1006_HD.m3u8
 #EXTINF:-1,CCTV-7 国防军事
-https://francis-228.github.io/migu/parse?cid=1007
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1007_HD.m3u8
 #EXTINF:-1,CCTV-8 电视剧
-https://francis-228.github.io/migu/parse?cid=1008
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1008_HD.m3u8
 #EXTINF:-1,CCTV-9 纪录
-https://francis-228.github.io/migu/parse?cid=1009
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1009_HD.m3u8
 #EXTINF:-1,CCTV-10 科教
-https://francis-228.github.io/migu/parse?cid=1010
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1010_HD.m3u8
 #EXTINF:-1,CCTV-11 戏曲
-https://francis-228.github.io/migu/parse?cid=1011
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1011_HD.m3u8
 #EXTINF:-1,CCTV-12 社会与法
-https://francis-228.github.io/migu/parse?cid=1012
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1012_HD.m3u8
 #EXTINF:-1,CCTV-13 新闻
-https://francis-228.github.io/migu/parse?cid=1013
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1013_HD.m3u8
 #EXTINF:-1,CCTV-14 少儿
-https://francis-228.github.io/migu/parse?cid=1014
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1014_HD.m3u8
 #EXTINF:-1,CCTV-15 音乐
-https://francis-228.github.io/migu/parse?cid=1015
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1015_HD.m3u8
 #EXTINF:-1,CCTV-16 奥林匹克
-https://francis-228.github.io/migu/parse?cid=1016
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1016_HD.m3u8
 #EXTINF:-1,CCTV-17 农业农村
-https://francis-228.github.io/migu/parse?cid=1017
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/1017_HD.m3u8
 
-# 卫视频道（全部热门）
 #EXTINF:-1,湖南卫视
-https://francis-228.github.io/migu/parse?cid=2015
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2015_HD.m3u8
 #EXTINF:-1,浙江卫视
-https://francis-228.github.io/migu/parse?cid=2022
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2022_HD.m3u8
 #EXTINF:-1,江苏卫视
-https://francis-228.github.io/migu/parse?cid=2021
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2021_HD.m3u8
 #EXTINF:-1,东方卫视
-https://francis-228.github.io/migu/parse?cid=2012
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2012_HD.m3u8
 #EXTINF:-1,北京卫视
-https://francis-228.github.io/migu/parse?cid=2001
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2001_HD.m3u8
 #EXTINF:-1,广东卫视
-https://francis-228.github.io/migu/parse?cid=2009
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2009_HD.m3u8
 #EXTINF:-1,安徽卫视
-https://francis-228.github.io/migu/parse?cid=2002
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2002_HD.m3u8
 #EXTINF:-1,重庆卫视
-https://francis-228.github.io/migu/parse?cid=2006
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2006_HD.m3u8
 #EXTINF:-1,山东卫视
-https://francis-228.github.io/migu/parse?cid=2020
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2020_HD.m3u8
 #EXTINF:-1,湖北卫视
-https://francis-228.github.io/migu/parse?cid=2011
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2011_HD.m3u8
 #EXTINF:-1,四川卫视
-https://francis-228.github.io/migu/parse?cid=2023
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2023_HD.m3u8
 #EXTINF:-1,天津卫视
-https://francis-228.github.io/migu/parse?cid=2024
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2024_HD.m3u8
 #EXTINF:-1,江西卫视
-https://francis-228.github.io/migu/parse?cid=2016
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2016_HD.m3u8
 #EXTINF:-1,河北卫视
-https://francis-228.github.io/migu/parse?cid=2010
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2010_HD.m3u8
 #EXTINF:-1,贵州卫视
-https://francis-228.github.io/migu/parse?cid=2008
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2008_HD.m3u8
 #EXTINF:-1,云南卫视
-https://francis-228.github.io/migu/parse?cid=2025
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2025_HD.m3u8
 #EXTINF:-1,广西卫视
-https://francis-228.github.io/migu/parse?cid=2007
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2007_HD.m3u8
 #EXTINF:-1,辽宁卫视
-https://francis-228.github.io/migu/parse?cid=2017
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2017_HD.m3u8
 #EXTINF:-1,吉林卫视
-https://francis-228.github.io/migu/parse?cid=2013
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2013_HD.m3u8
 #EXTINF:-1,黑龙江卫视
-https://francis-228.github.io/migu/parse?cid=2014
-#EXTINF:-1,海南卫视
-https://francis-228.github.io/migu/parse?cid=2018
-#EXTINF:-1,厦门卫视
-https://francis-228.github.io/migu/parse?cid=2019
-
-# 体育频道（咪咕全部）
-#EXTINF:-1,咪咕体育
-https://francis-228.github.io/migu/parse?cid=3001
-#EXTINF:-1,咪咕体育2
-https://francis-228.github.io/migu/parse?cid=3002
-#EXTINF:-1,咪咕体育3
-https://francis-228.github.io/migu/parse?cid=3003
-#EXTINF:-1,咪咕体育4
-https://francis-228.github.io/migu/parse?cid=3004
-#EXTINF:-1,咪咕体育5
-https://francis-228.github.io/migu/parse?cid=3005
-#EXTINF:-1,五星体育
-https://francis-228.github.io/migu/parse?cid=3006
-#EXTINF:-1,广东体育
-https://francis-228.github.io/migu/parse?cid=3007
-#EXTINF:-1,山东体育
-https://francis-228.github.io/migu/parse?cid=3008
-#EXTINF:-1,辽宁体育
-https://francis-228.github.io/migu/parse?cid=3009
-#EXTINF:-1,北京体育
-https://francis-228.github.io/migu/parse?cid=3010
-
-# 4K专区
-#EXTINF:-1,CCTV-4K
-https://francis-228.github.io/migu/parse?cid=4001
-#EXTINF:-1,卫视4K
-https://francis-228.github.io/migu/parse?cid=4002
-
-# 付费/影视
-#EXTINF:-1,CHC高清电影
-https://francis-228.github.io/migu/parse?cid=5001
-#EXTINF:-1,家庭影院
-https://francis-228.github.io/migu/parse?cid=5002
-#EXTINF:-1,动作电影
-https://francis-228.github.io/migu/parse?cid=5003
-#EXTINF:-1,科幻电影
-https://francis-228.github.io/migu/parse?cid=5004
-
-# 地方精选（热门）
-#EXTINF:-1,北京文艺
-https://francis-228.github.io/migu/parse?cid=6001
-#EXTINF:-1,上海新闻综合
-https://francis-228.github.io/migu/parse?cid=6002
-#EXTINF:-1,广东珠江
-https://francis-228.github.io/migu/parse?cid=6003
-#EXTINF:-1,浙江民生
-https://francis-228.github.io/migu/parse?cid=6004
-#EXTINF:-1,江苏城市
-https://francis-228.github.io/migu/parse?cid=6005
+https://liveplay-vhisl.miguvideo.com/live_publish/20688/2014_HD.m3u8
