@@ -1,18 +1,21 @@
 const fetch = require('node-fetch');
+const config = require('./config.json');
 
-// 👇替换成你自己的咪咕账号参数
-const MIGU_USERID = "985622662";
-const MIGU_TOKEN = "nlps2D562D817105A67396C8";
+exports.handler = async (event) => {
+  const cid = event.queryStringParameters.cid || '';
+  const { userId, userToken, clientId } = config;
 
-async function getPlayUrl(cid) {
-  const api = `https://webapi.miguvideo.com/gateway/live/play/v1/playurl?contetId=${cid}&userId=${MIGU_USERID}&userToken=${MIGU_TOKEN}&clientId=80001`;
-  const res = await fetch(api);
-  return res.text();
-}
+  const apiUrl = `https://webapi.miguvideo.com/gateway/live/play/v1/playurl?contetId=${cid}&userId=${userId}&userToken=${userToken}&clientId=${clientId}`;
+  
+  const res = await fetch(apiUrl);
+  const data = await res.text();
 
-module.exports = async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  const cid = req.query.cid || "";
-  const data = await getPlayUrl(cid);
-  res.end(data);
+  return {
+    statusCode: 200,
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+      "Access-Control-Allow-Origin": "*"
+    },
+    body: data
+  };
 };
