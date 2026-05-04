@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://img1.baidu.com/it/u=394918418,121054812&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" ,CCTV-1 综合
+https://你的用户名.github.io/migu/api.php?cid=1001
+#EXTINF:-1 tvg-id="CCTV-5" tvg-name="CCTV-5" tvg-logo="https://img1.baidu.com/it/u=1820012578,2130326006&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" ,CCTV-5 体育
+https://你的用户名.github.io/migu/api.php?cid=1005
